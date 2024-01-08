@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 
-router.get('/videos', (req, res) => {
+router.get('/video', (req, res) => {
     const videos = [
         {
             "id": "84e96018-4022-434e-80bf-000ce4cd12b8",
