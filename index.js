@@ -5,6 +5,7 @@ require ('dotenv').config();
 const PORT = process.env.PORT || 8080
 const cors = require('cors');
 
+app.use(express.static('public'));
 app.use(cors( { origin: '*' } ));
 app.use(express.json());
 app.use('/', videos);
