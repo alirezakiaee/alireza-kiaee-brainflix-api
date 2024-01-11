@@ -1,10 +1,11 @@
 const express = require('express');
 const app = express();
-const PORT = 8080;
 const videos = require('./routes/videos');
+require ('dotenv').config();
+const PORT = process.env.PORT || 8080
 const cors = require('cors');
 
-app.use(cors());
+app.use(cors( { origin: '*' } ));
 app.use(express.json());
 app.use('/', videos);
 app.use('/:id', videos);
