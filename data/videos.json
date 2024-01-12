@@ -299,18 +299,5 @@
         "timestamp": 1632496261000
       }
     ]
-  },
-  {
-    "id": "lcesf270lr8peyx4",
-    "title": "Add your name in the body",
-    "channel": "Alireza's channel",
-    "image": "http://localhost:8080/images/Upload-video-preview.313a407cf90c0668da07.jpg",
-    "description": " this is alireza s description",
-    "views": "1,001,023",
-    "likes": "110,985",
-    "duration": "4:01",
-    "video": "https://project-2-api.herokuapp.com/stream",
-    "timestamp": 1626032763000,
-    "comments": []
   }
 ]

@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const videos = require('../data/videos.json');
 const uniqid = require('uniqid');
-const apiaddress= "http://localhost:8080/"
 
 router.get('/videos', (req, res) => {
     res.send(videos);
@@ -22,7 +21,7 @@ router.post('/videos', (req, res) => {
         "id": uniqid(),
         "title": req.body.title,
         "channel": "Alireza's channel",
-        "image": apiaddress +"images/Upload-video-preview.313a407cf90c0668da07.jpg",
+        "image": "http://localhost:8080/images/Upload-video-preview.313a407cf90c0668da07.jpg",
         "description": req.body.description,
         "views": "1,001,023",
         "likes": "110,985",
