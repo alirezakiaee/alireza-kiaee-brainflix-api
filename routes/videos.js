@@ -3,6 +3,7 @@ const router = express.Router();
 const videos = require('../data/videos.json');
 const uniqid = require('uniqid');
 
+
 router.get('/videos', (req, res) => {
     res.send(videos);
 })
@@ -28,7 +29,22 @@ router.post('/videos', (req, res) => {
         "duration": "4:01",
         "video": "https://project-2-api.herokuapp.com/stream",
         "timestamp": 1626032763000,
-        "comments": []
+        "comments": [
+            {
+              "id": "2d818087-c1f4-4ec2-bcdc-b545fd6ec258",
+              "name": "Martin Evergreen",
+              "comment": "I’ve loved trains ever since I was a child. I dreamed about riding one around the world. This is the most fantastic thing I’ve seen yet, and I’m watching it ON a train!",
+              "likes": 3,
+              "timestamp": 1632512763000
+            },
+            {
+              "id": "191de346-b3c2-47b4-bf5b-6db90d1e3bdc",
+              "name": "Emily Harper",
+              "comment": "Let’s collaborate on a video for saving money on cheap train tickets! I’ll have my associates contact yours.",
+              "likes": 0,
+              "timestamp": 1632496261000
+            }
+          ]
       };
     
     videos.push(newVideo);

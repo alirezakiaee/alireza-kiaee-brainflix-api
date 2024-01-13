@@ -2,7 +2,9 @@ const express = require('express');
 const app = express();
 const videos = require('./routes/videos');
 require ('dotenv').config();
-const PORT = process.env.PORT || 8080
+const { PORT,BACKEND } = process.env;
+// const PORT = process.env.PORT || 8080;
+
 const cors = require('cors');
 
 app.use(express.static('public'));
